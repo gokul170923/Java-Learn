@@ -1,0 +1,37 @@
+Starting java today
+
+remember :
+ - strongly typed
+ - oops based
+ - the standard says ,,, keep the public class(only 1) name same as the file name
+ - public static void main(String []args)
+
+
+
+                                            MENTAL MODEL FOR NEW LEARNERS
+JAVA.base module:
+        java.lang package :
+                Object class
+        java.util package
+        java.math package
+        java.io package
+        etc....
+
+
+1 . data types :
+                primitive types (on stack unless it is inside a object):
+                            - byte (1 byte or 8 bits)
+                            - short (2 byte)
+                            - int (4 byte)
+                            - long (8 byte)
+                            - float (4 byte)
+                            - double (8 byte)
+                            - boolean :
+                                        - cannot type cast to a integer
+                            - char :
+                                     - char in java is 2 bytes instead of 1 byte
+                                     - uses unicode instead of ascii code
+
+
+                Reference types (the object is on heap , teh reference is where the variable is):
+                            - 1D arrays
