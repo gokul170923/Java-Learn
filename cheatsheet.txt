@@ -11,7 +11,11 @@ remember :
                                             MENTAL MODEL FOR NEW LEARNERS
 JAVA.base module:
         java.lang package :
-                Object class
+                Object class : 
+                              .hashCode() , gives a integer from its reference address that can be used in hashable containers.
+                              .equals() , in Object default wraps == ( this == obj) but can be overridden for values.
+                              .getCLass() , returns the runtime class of the object no matter the type of the refrence variable.
+                              
         java.util package
         java.math package
         java.io package
