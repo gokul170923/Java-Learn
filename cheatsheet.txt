@@ -18,7 +18,7 @@ JAVA.base module:
                 String class : 
                               immutable
                               string literal like "java" are put in SCP so tehy have same refrence
-                              .equals() is overriden to chcak the actual value of string hence == is not same as .equals()
+                              .equals() is overriden to check the actual value of string hence == is not same as .equals()
                               new String("java") forces the jvm to make a new string object that is not kept in SCP
                               .length()	, Number of characters
                               .charAt()	, Character at index
@@ -29,6 +29,30 @@ JAVA.base module:
                               .replace('a','b') or ("before","after")	 , Returns new string
                               .toCharArray() converts string to a char[] array
                               .intern() , if the string is present in SCP returns the refrnece else creates one in the SCP
+                StringBuilder : 
+                               muttable
+                               StringBuilder() , StringBuilder(CharSequence seq) , StringBuilder(int capacity) , StringBuilder(String str)
+                               .append() , This method appends the given string argument to the sequence.
+                               .capacity() , gives current capacity of the container , increases by  c * 2  + 2  
+                Wrapper Classes : 
+                                int	Integer
+                                long	Long
+                                double	Double
+                                float	Float
+                                char	Character
+                                byte	Byte
+                                short	Short
+                                boolean	Boolean
+                                usefull :
+                                         Integer i = Integer.valueOf(10) >  new Integer(10) (cached ,returns wrapper ,string input, compiler recomended)
+                                         int i = Integer.parseInt("10") returns a primitive from string
+                                         int i = Wrapper.intValue() to convert wrapper to primitive types;
+
+                                         always use .equals() for comparison
+                                         each wrapper has max and min values liek Integer.MAX_VALUE;
+
+                           
+
         java.util package
         java.math package
         java.io package
